@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<div class="jumbotron centered">
+
+
+
+
+<div class="box">
+  <% newListItems.forEach(function(element){ %>
+    <form  action="/vendor/list" method="post">
+      <div class="item" >
+        <input type="checkbox" name="checkbox" value="<%= element._id %>" onchange="this.form.submit()" >
+        <p>title:<%= element.title %></p>
+            <p>descritption:<%= element.description %></p>
+            <p>price:<%= element.price %></p>
+
+
+      </div>
+    </form>
+
+
+    <% }); %>
+
+
+  <form  class="item" action="/vendor/list" method="post">
+    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button type="submit" name="Submit" >+</button>
+  </form>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

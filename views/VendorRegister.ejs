@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="text-center">
+
+
+<form class="form-signin" action = "/vendor/Register" method = "POST">
+      <i class="fab fa-accusoft fa-7x "></i>
+      <img class="mb-4" src="logo.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Sign Up!</h1>
+
+      <input type="email" class="form-control top" placeholder="Email" required autofocus name="noone">
+      <input type="text" class="form-control top" placeholder="Mobile Number" required autofocus name="username">
+      <input type="password" class="form-control bottom" placeholder="Password" required name="password">
+      <textarea name="description" rows="" cols="60" placeholder="Vendor Descritpion"></textarea>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register!</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Vendor-buyer</p>
+    </form>
+    </div>
+
+<%- include('partials/footer') %>
